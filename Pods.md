@@ -108,6 +108,6 @@ metadata:
   name: apache
 spec:
   containers:
-    - name: httpdserver
+    - name: apacheserver
       image: httpd
 ```
