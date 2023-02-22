@@ -1,6 +1,6 @@
 # Delete Kubernetes Resources
 
-- The simplest method of deleting any resource in Kubernetes is to use the specific manifest file used to create it. With the manifest file on hand, we can use the kubectl delete command with the -f flag.
+- The simple method of deleting any resource in Kubernetes is to use the specific manifest file used to create it. With the manifest file on hand, we can use the kubectl delete command with the -f flag.
 - **Syntax**
 
 ```bash
