@@ -32,7 +32,7 @@ kubectl create -f <filename>
 check our pods using
 
 ```bash
-kubectl get pods
+kubectl get pod
 ```
 
 Get the service using below command
@@ -83,4 +83,12 @@ Retrieve the URL of a service running in a Minikube cluster
 minikube service nginxservice --url
 
 curl http://192.168.59.113:31050
+```
+
+delete service nginx
+
+```bash
+kubectl delete svc nginxservice
+
+kubectl delete pod nginx
 ```
