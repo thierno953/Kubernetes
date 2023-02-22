@@ -23,7 +23,7 @@ spec:
           protocol: TCP
 ```
 
-Now Create a service from
+Now Create a pod nginx from
 
 ```bash
 kubectl create -f <filename>
