@@ -30,8 +30,8 @@
 ## What is Kubectl
 
 - kubectl is the command line utility using which we can interact with k8s cluster
-- Uses APIs provided by API server to interact.
-- Also known as the kube command line tool or kubectl or kube control.
+- Uses APIs provided by API server to interact
+- Also known as the kube command line tool or kubectl or kube control
 - Used to deploy and manage applications on a Kubernetes
 
 ## Minikube
