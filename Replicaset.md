@@ -71,8 +71,8 @@ To scale up the replicas:
 
 **Example**
 
-- change replicas: 3 --> replicas: 5
-  |-------------------------------------------------------------------------------------|
+ change replicas: 3 --> replicas: 5
+|-------------------------------------------------------------------------------------|
 
 ```bash
 kubectl scale rs --replicas=5 nginxfrontend
