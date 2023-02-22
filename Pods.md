@@ -29,7 +29,7 @@ spec:                         # The spec/blueprint for the pod
           protocol: TCP
 ```
 
-- Displays master and service URLs
+Displays master and service URLs
 
 ```bash
 kubectl cluster-info
@@ -47,13 +47,13 @@ kubectl explain pod
 kubectl create -f <PodName>
 ```
 
-- Start this Pod by running:
+Start this Pod by running:
 
 ```bash
 kubectl apply -f <PodName>
 ```
 
-- Check on its status with:
+Check on its status with:
 
 ```bash
 kubectl get pods
@@ -69,13 +69,13 @@ cd /usr/share/nginx/html
 cat index.html
 ```
 
-- Edit pod configuration file
+Edit pod configuration file
 
 ```bash
 kubectl edit -f <PodName>
 ```
 
-- Get information about a running pod
+Get information about a running pod
 
 ```bash
 kubectl describe pod <PodName>
