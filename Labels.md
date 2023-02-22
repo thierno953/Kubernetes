@@ -12,7 +12,7 @@ kuectl label resource-type resource-name env=prod(label-name)
 
 - Rename the label by using the below command
 
-**Syntax**
+  **Syntax**
 
 ```bash
 kuectl label --overwrite resource-type resource-name env=testing(label-name)
