@@ -1,6 +1,6 @@
 # Rolling Update Deployment
 
-- Kubernetes Rolling Update strategy is to replace old pods with new ones gradually, while continuning to serve clients without incurring downtine.
+- Kubernetes Rolling Update strategy is to replace old pods with new ones gradually, while continuning to serve clients without incurring downtine.<br>
   **RollingUpdate**: New pods are added gradually, and old pods are terminated gradually.<br>
   **Recreate**: All old pods are terminated before any new pods added.
 
