@@ -4,12 +4,12 @@
 - Secrets are similar to ConfigMaps but are specifically intended to hold confidential data.
 - Pods can reference to the Secrets, as container environment variables or mounted volume to the container.
 
-## Types of Kubernetes secret
+  ## Types of Kubernetes secret
 
-- When creating a Secret, you can specify its type using the type field of a Secret resource.
+When creating a Secret, you can specify its type using the type field of a Secret resource.
 
 ```bash
-Builtin Type                                |                Usage
+Builtin Type                              |                Usage
 -----------------------------------------------------------------------------------------
 Opaque                                    |             arbitrary user-defined data
 Kubernetes.io/service-account-token       |             service account token
