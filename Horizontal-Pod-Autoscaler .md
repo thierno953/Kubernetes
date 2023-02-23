@@ -128,7 +128,7 @@ kubectl get pods
 ```
 
 ========================
-**NB**:
+* **NB**:
 
 ```shell
 kubectl autoscale deployment deploymentnginx --cpu-percent=50 --min=1 --max=10
