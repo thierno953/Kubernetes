@@ -11,14 +11,14 @@
 ```bash
 Builtin Type                                |                Usage
 -----------------------------------------------------------------------------------------
-- Opaque                                    |             arbitrary user-defined data
-- Kubernetes.io/service-account-token       |             service account token
-- Kubernetes.io/dockercfg                   |             serialized ~/.dockercfg file
-- Kubernetes.io/dockerconfigjson            |             serialized ~/.docker/config.json file
-- Kubernetes.io/basic-auth                  |             credentials for basic authentication
-- Kubernetes.io/ssh-auth                    |             credentials for ssh authentication
-- Kubernetes.io/tls                         |             data for a TLS client or server
-- bootstrap.kubernetes.io/token             |             bootstrap token data
+Opaque                                    |             arbitrary user-defined data
+Kubernetes.io/service-account-token       |             service account token
+Kubernetes.io/dockercfg                   |             serialized ~/.dockercfg file
+Kubernetes.io/dockerconfigjson            |             serialized ~/.docker/config.json file
+Kubernetes.io/basic-auth                  |             credentials for basic authentication
+Kubernetes.io/ssh-auth                    |             credentials for ssh authentication
+Kubernetes.io/tls                         |             data for a TLS client or server
+bootstrap.kubernetes.io/token             |             bootstrap token data
 ```
 
 **secretstest.yml**
