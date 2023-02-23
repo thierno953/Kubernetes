@@ -79,27 +79,6 @@ kubectl get secrets
 kubectl get secret <NAME> -o yaml
 ```
 
-### To inject multiple secret
-
-**podsecret1.yml**
-
-```shell
-apiVersion: v1
-kind: Pod
-metadata:
-  name: secret-test-env
-spec:
-  containers:
-    - name: env-test-container
-      image: nginx
-      env:
-        - name: SECRET_USERNAME
-          valueFrom:
-            secretKeyRef:
-              name: secret-test
-              key: username
-```
-
 ### Inject secret as file
 
 **podsecret.yml**
@@ -138,4 +117,23 @@ ls
 cat password ; echo
 
 cat username ; echo
+```
+
+**podsecret1.yml**
+
+```shell
+apiVersion: v1
+kind: Pod
+metadata:
+  name: secret-test-env
+spec:
+  containers:
+    - name: env-test-container
+      image: nginx
+      env:
+        - name: SECRET_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: secret-test
+              key: username
 ```
