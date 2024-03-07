@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-conf
+  namespace: k8s-ns
+data:
+  website: |
+    server: {
+      port 80
+      location / {
+        root /usr/share/nginx/html
+      }
+    }

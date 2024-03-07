@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nginx-data-pvc
+  namespace: k8s-ns
+spec:
+  storageClassName: longhorn
+  accessModes:
+  - ReadOnlyMany 
+  #ReadWriteOnce 
+  #ReadWriteMany
+  resources:
+    requests:
+      storage: 5Gi
