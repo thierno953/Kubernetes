@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: dnsutils
-  namespace: learning
+  namespace: k8s-ns
 spec:
   containers:
   - image: ubuntu:22.04
