@@ -1,0 +1,18 @@
+k expose -n k8s-ns deploy/nginx-deployment --port 80 
+k expose -n k8s-ns-again deploy/nginx-deployment --port 80 
+k get nodes -o wide
+k get svc -n kube-system
+
+k get po,svc -n k8s-ns -o wide
+k get po,svc -n k8s-ns-again -o wide
+
+--------------------------------------------
+apt update && apt install -y curl dnsutils dig
+
+nslookup nginx-deployment.k8s-ns.svc.cluster.local
+dig nginx-deployment.k8s-ns.svc
+dig nginx-deployment.k8s-ns-again
+nslookup nginx-deployment.k8s-ns-again
+nslookup 10-244-1-19.k8s-ns-again
+nslookup 10-244-1-19.k8s-ns.pod
+nslookup 10.244.1.19
