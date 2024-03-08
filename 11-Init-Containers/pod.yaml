@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: newpod
-  namespace: learning
+  namespace: k8s-ns
 spec:
   volumes:
   - name: shared-vol
