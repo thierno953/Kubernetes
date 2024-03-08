@@ -1,0 +1,1 @@
+while true; do curl http://172.18.0.3:30235; sleep 0.5; done
