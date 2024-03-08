@@ -1,0 +1,3 @@
+kubectl taint node kind-cluster-worker1 gpu=true:NoSchedule
+kubectl taint node kind-cluster-worker2 gpu=false:NoSchedule
+kubectl taint node kind-cluster-worker3 gpu=yeah:NoSchedule
