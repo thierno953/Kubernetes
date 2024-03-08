@@ -5,7 +5,7 @@ metadata:
   name: mysql-passwd
   namespace: k8s-ns
 data:
-  passwd: UEBzc3cwcmQxMjM=   # P@ssw0rd123
+  passwd: UEBzc3cwcmQxMjM=  
 
 ---
 apiVersion: v1
